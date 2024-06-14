@@ -1,66 +1,35 @@
-## Foundry
+# Foundry DeFi Stablecoin
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 3 Functions of Money
+1. Storage of value
+2. Unit of account
+3. Medium of exchange
 
-Foundry consists of:
+## Stablecoin Categories/Properties
+1. Relative stability (pegged/anchored or floating)
+- Pegged stablecoins have their value tied to another asset
+- Floating stablecoins use math and other mechanisms to maintain a constant buying power
+2. Stability method (governed or algorithmic)
+- Algorithmic stablecoins use a transparent math equation or set of code to mint and burn tokens
+- Governed stablecoins mint and burn tokens via human intervention
+3. Collateral type (endogenous or exogenous)
+- Exogenous collateral originates from outside the protocol
+- Endogenous collateral originates from inside the protocol
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+# About 
+We are going to make a stablecoin that is:
+- (Relative stability) Anchored or Pegged -> $1.00 
+  - Chainlink price feed
+  - Set a function to exchange ETH & BTC -> $$$
+- Stability Mechanism (minting): Algorithmic (decentralized)
+  - People can only mint the stablecoin with enough collateral (coded)
+- Collateral: Exogenous (Crypto)
+  1. wETH
+  2. wBTC
 
-## Documentation
 
-https://book.getfoundry.sh/
+   
 
-## Usage
 
-### Build
 
-```shell
-$ forge build
-```
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
